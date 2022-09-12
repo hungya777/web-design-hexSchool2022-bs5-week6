@@ -1,0 +1,81 @@
+/* Bootstrap 提供的漸層效果設定 */
+//Horizontal gradient, from left to right
+@mixin gradient-x($start-color: $secondary, $end-color: $primary, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(104deg, $start-color $start-percent, $end-color $end-percent);
+}
+// Vertical gradient, from top to bottom
+@mixin gradient-y($start-color: $secondary, $end-color: $primary, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(180deg, $start-color $start-percent, $end-color $end-percent);
+}
+
+//文字漸層
+@mixin text-gradient-x($start-color: $secondary, $end-color: $primary, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(104deg, $start-color $start-percent, $end-color $end-percent);
+  background-clip: text;
+  color: transparent;
+}
+@mixin text-gradient-y($start-color: $secondary, $end-color: $primary, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(180deg, $start-color $start-percent, $end-color $end-percent);
+  background-clip: text;
+  color: transparent;
+}
+
+// 文字size
+@mixin font-size {
+  &-1 {
+    font-size: $h1-font-size !important;  //48px
+  }
+  &-2 {
+    font-size: $h2-font-size !important;  //32px
+  }
+  &-3 {
+    font-size: $h3-font-size !important;  //28px
+  }
+  &-4 {
+    font-size: $h4-font-size !important;  //24px
+  }
+  &-5 {
+    font-size: $font-size-base * 1.375 !important;  //22px
+  }
+  &-6 {
+    font-size: $font-size-base * 1.25 !important;  //20px
+  }
+  &-7 {
+    font-size: $font-size-base * 1.125 !important;  //18px
+  }
+  &-8 {
+    font-size: $font-size-base !important; //16px
+  }
+  &-9 {
+    font-size: $font-size-base * 0.875 !important;  //14px
+  }
+  &-10 {
+    font-size: $font-size-base * 0.75 !important;  //12px
+  }
+}
+
+@mixin size($width, $height:$width) {
+  width: $width;
+  height: $height;
+}
+//首頁header的navbar偽元素
+@mixin navbar-bar($color) {
+  content: "";
+  position: absolute;
+  top: 80px;
+  width: 50%;
+  height: 2px;
+  background-color: $color;
+  @include media-breakpoint-up(sm) {
+    top: 90px;
+  }
+}
+// 文字下底線
+@mixin text-underline($color) {
+  content:'';
+  position: absolute;
+  background-color: $color;
+  width: 50px;
+  height: 3px;
+  bottom: -16px;
+}
