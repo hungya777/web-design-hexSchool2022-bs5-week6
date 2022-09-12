@@ -1,38 +1,39 @@
-$(function() {
-  const swiperDefault = new Swiper(".swiper-default", {
+"use strict";
+"use strict";
+
+$(function () {
+  var swiperDefault = new Swiper(".swiper-default", {
     slidesPerView: 3,
     spaceBetween: 16,
     breakpoints: {
       992: {
         slidesPerView: 4,
-        spaceBetween: 16,
-      },
-    },
+        spaceBetween: 16
+      }
+    }
   });
-  const swiper = new Swiper(".swiper-auto", {
+  var swiper = new Swiper(".swiper-auto", {
     slidesPerView: 4,
     spaceBetween: 8,
     //多欄
     breakpoints: {
-        768: {
-            slidesPerView: 6,
-            spaceBetween: 8,
-        },
-        992: {
-            slidesPerView: 9,
-            spaceBetween: 16,
-            
-        }
+      768: {
+        slidesPerView: 6,
+        spaceBetween: 8
+      },
+      992: {
+        slidesPerView: 9,
+        spaceBetween: 16
+      }
     },
     speed: 2000,
     autoplay: {
       disableOnInteraction: false,
       delay: 0
-    },
-  });
+    }
+  }); //Effect fade
 
-  //Effect fade
-  const swiperFade = new Swiper(".swiper-fade", {
+  var swiperFade = new Swiper(".swiper-fade", {
     // Optional parameters
     effect: "fade",
     loop: true,
@@ -51,3 +52,4 @@ $(function() {
     }
   });
 });
+//# sourceMappingURL=all.js.map
