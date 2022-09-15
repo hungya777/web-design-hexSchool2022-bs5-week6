@@ -19251,6 +19251,7 @@ fieldset:disabled .btn {
 body {
   font-family: 'Noto Sans TC', sans-serif, 'Azeret Mono', monospace;
   color: #fff;
+  line-height: 1.5;
 }
 
 img {
@@ -19325,30 +19326,37 @@ a {
 
 .fs-1 {
   font-size: 3rem !important;
+  line-height: 70px;
 }
 
 .fs-2 {
   font-size: 2rem !important;
+  line-height: 37px;
 }
 
 .fs-3 {
   font-size: 1.75rem !important;
+  line-height: 40px;
 }
 
 .fs-4 {
   font-size: 1.5rem !important;
+  line-height: 35px;
 }
 
 .fs-5 {
   font-size: 1.375rem !important;
+  line-height: 32px;
 }
 
 .fs-6 {
   font-size: 1.25rem !important;
+  line-height: 29px;
 }
 
 .fs-7 {
   font-size: 1.125rem !important;
+  line-height: 26px;
 }
 
 .fs-8 {
@@ -19361,29 +19369,37 @@ a {
 
 .fs-10 {
   font-size: 0.75rem !important;
+  line-height: 14px;
 }
 
 @media (min-width: 576px) {
   .fs-sm-1 {
     font-size: 3rem !important;
+    line-height: 70px;
   }
   .fs-sm-2 {
     font-size: 2rem !important;
+    line-height: 37px;
   }
   .fs-sm-3 {
     font-size: 1.75rem !important;
+    line-height: 40px;
   }
   .fs-sm-4 {
     font-size: 1.5rem !important;
+    line-height: 35px;
   }
   .fs-sm-5 {
     font-size: 1.375rem !important;
+    line-height: 32px;
   }
   .fs-sm-6 {
     font-size: 1.25rem !important;
+    line-height: 29px;
   }
   .fs-sm-7 {
     font-size: 1.125rem !important;
+    line-height: 26px;
   }
   .fs-sm-8 {
     font-size: 1rem !important;
@@ -19393,30 +19409,38 @@ a {
   }
   .fs-sm-10 {
     font-size: 0.75rem !important;
+    line-height: 14px;
   }
 }
 
 @media (min-width: 992px) {
   .fs-lg-1 {
     font-size: 3rem !important;
+    line-height: 70px;
   }
   .fs-lg-2 {
     font-size: 2rem !important;
+    line-height: 37px;
   }
   .fs-lg-3 {
     font-size: 1.75rem !important;
+    line-height: 40px;
   }
   .fs-lg-4 {
     font-size: 1.5rem !important;
+    line-height: 35px;
   }
   .fs-lg-5 {
     font-size: 1.375rem !important;
+    line-height: 32px;
   }
   .fs-lg-6 {
     font-size: 1.25rem !important;
+    line-height: 29px;
   }
   .fs-lg-7 {
     font-size: 1.125rem !important;
+    line-height: 26px;
   }
   .fs-lg-8 {
     font-size: 1rem !important;
@@ -19426,30 +19450,38 @@ a {
   }
   .fs-lg-10 {
     font-size: 0.75rem !important;
+    line-height: 14px;
   }
 }
 
 @media (min-width: 1200px) {
   .fs-xl-1 {
     font-size: 3rem !important;
+    line-height: 70px;
   }
   .fs-xl-2 {
     font-size: 2rem !important;
+    line-height: 37px;
   }
   .fs-xl-3 {
     font-size: 1.75rem !important;
+    line-height: 40px;
   }
   .fs-xl-4 {
     font-size: 1.5rem !important;
+    line-height: 35px;
   }
   .fs-xl-5 {
     font-size: 1.375rem !important;
+    line-height: 32px;
   }
   .fs-xl-6 {
     font-size: 1.25rem !important;
+    line-height: 29px;
   }
   .fs-xl-7 {
     font-size: 1.125rem !important;
+    line-height: 26px;
   }
   .fs-xl-8 {
     font-size: 1rem !important;
@@ -19459,7 +19491,16 @@ a {
   }
   .fs-xl-10 {
     font-size: 0.75rem !important;
+    line-height: 14px;
   }
+}
+
+.lh-spec-xs {
+  line-height: 1.167;
+}
+
+.lh-spec-s {
+  line-height: 1.1875;
 }
 
 .rounded-4 {
@@ -19522,10 +19563,12 @@ a {
 .logo-icon {
   width: 24px;
   height: 24px;
+  background: url("../images/logo2.svg");
 }
 
 @media (min-width: 576px) {
   .logo-icon {
+    background: url("../images/logo.svg");
     width: 175px;
     height: 42px;
   }
@@ -19623,12 +19666,18 @@ a {
   width: 50px;
   height: 3px;
   bottom: -16px;
-  left: 46%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (min-width: 992px) {
   .service-text-underline::after {
     left: 0;
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -19639,7 +19688,10 @@ a {
   width: 50px;
   height: 3px;
   bottom: -16px;
-  left: 46%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .sub-title-text-underline::after {
@@ -19649,7 +19701,10 @@ a {
   width: 50px;
   height: 3px;
   bottom: -16px;
-  left: 46%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (min-width: 1200px) {
@@ -19661,6 +19716,9 @@ a {
     height: 3px;
     bottom: -16px;
     left: 0;
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -19949,7 +20007,7 @@ a {
 .aside-sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 160px;
+  top: 174px;
   z-index: 1000;
 }
 

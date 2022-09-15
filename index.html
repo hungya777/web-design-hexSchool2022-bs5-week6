@@ -17,14 +17,16 @@
   <body>
     <header class="navbar navbar-border navbar-expand-sm bg-gray py-6 sticky-top">
       <div class="container">
-        <div>
-          <a class="d-sm-none" href="#">
+        <!-- logo圖片依助教建議改用背景圖方式切換 -->
+        <a href="index.html">
+          <div class="logo-icon"></div>
+        </a>
+          <!-- <a class="d-sm-none" href="#">
             <img class="logo-icon" src="./assets/images/logo2.svg" alt="logo">
           </a>
           <a class="d-none d-sm-block" href="#">
             <img class="logo-icon" src="./assets/images/logo.svg" alt="logo">
-          </a>
-        </div>
+          </a> -->
         <button 
           class="navbar-toggler link-primary" 
           type="button"
@@ -58,12 +60,12 @@
     <main>
   <section class="bg-gray-dark">
     <div class="container banner row d-flex justify-content-center align-items-center mx-auto">
-      <div class="position-relative col col-sm-9 col-xl-6 border border-white text-center py-8 py-sm-12">
+      <div class="col col-sm-9 col-xl-6 bg-gray-dark position-relative border border-white text-center py-8 py-sm-12">
         <div class="position-absolute top-0 start-0 translate-middle square-box"></div>
         <div class="position-absolute top-0 start-100 translate-middle square-box"></div>
         <div class="position-absolute top-100 start-0 translate-middle square-box"></div>
         <div class="position-absolute top-100 start-100 translate-middle square-box"></div>
-        <h1 class="fs-4 fs-sm-2 fs-lg-1 text-gradient-y fw-bold mb-0">全台最豐富的程式家教</h1>
+        <h1 class="fs-4 lh-1 fs-sm-2 fs-lg-1 text-gradient-y fw-bold mb-0">全台最豐富的程式家教</h1>
         <h2 class="fs-4 fs-sm-2 fs-lg-1 fw-bold mb-6">在實踐中化理想為現實</h2>
         <p class="fs-9 fs-lg-7 mb-0">全台最專業師資｜到府程式家教｜客製化課程</p>
       </div>
@@ -81,7 +83,7 @@
         <div class="col-lg-9">
           <div class="row  gy-4 gy-md-0">
             <div class="col-md-4">
-              <div class="card card-teach py-8 rounded-5 h-100">
+              <a href="#" class="card card-teach py-8 rounded-5 h-100">
                 <div class="card-body text-center">
                   <span class="material-icons-outlined mb-6">
                     code
@@ -93,10 +95,10 @@
                     學習標準化的電腦形式語言<br>培養運算思維和邏輯素養
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-md-4">
-              <div class="card card-teach py-8 rounded-5 h-100">
+              <a href="#" class="card card-teach py-8 rounded-5 h-100">
                 <div class="card-body text-center">
                   <span class="material-icons-outlined mb-6">
                     rocket_launch
@@ -108,10 +110,10 @@
                     客製化專屬課表<br>讓學習變簡單
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-md-4">
-              <div class="card card-teach py-8 rounded-5 h-100">
+              <a href="#" class="card card-teach py-8 rounded-5 h-100">
                 <div class="card-body text-center">
                   <span class="material-icons-outlined mb-6">
                     location_on
@@ -123,7 +125,7 @@
                     專業老師到你指定的地點<br>一對一高效學習
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -134,7 +136,7 @@
   <section class="bg-gray-dark">
     <div class="container py-10 py-lg-20">
       <h2 class="fs-5 fs-lg-3 fw-bold text-center position-relative title-text-underline mb-12_5 mb-lg-18_5">預期上課流程</h2>
-      <ul class="row list-unstyled gy-4 gy-lg-0">
+      <ul class="row list-unstyled gy-12_5 gy-md-10">
         <li class="col-md-6 col-lg-3">
           <div class="card bg-gray-dark border border-white rounded-5 py-8 position-relative h-100">
             <div class="position-absolute top-0 translate-middle-y process-num fs-1 text-primary fw-bold bg-gray-dark ff-azeret-mono px-2">
@@ -200,26 +202,28 @@
   </section>
   <!-- 程式項目 -->
   <section class="bg-gray">
-    <div class="px-3 py-10 px-md-6 py-lg-20">
-      <h2 class="fs-5 fs-lg-3 fw-bold text-center position-relative title-text-underline mb-12_5 mb-lg-18_5">你想要學習的程式，都在這裡
-      </h2>
-      <div class="swiper swiper-auto">
-        <div class="swiper-wrapper">
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">JavaScript</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">HTML/CSS</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">SQL</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Java</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">MySQL</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Bash/Shell</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Python</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">jQuery</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">PHP</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">C++</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Android</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Vue</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">React</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Angular</a>
-          <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">NodeJS</a>
+    <div class="container-fluid">
+      <div class="px-3 py-10 px-md-6 py-lg-20">
+        <h2 class="fs-5 fs-lg-3 fw-bold text-center position-relative title-text-underline mb-12_5 mb-lg-18_5">你想要學習的程式，都在這裡
+        </h2>
+        <div class="swiper swiper-auto">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">JavaScript</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">HTML/CSS</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">SQL</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Java</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">MySQL</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Bash/Shell</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Python</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">jQuery</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">PHP</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">C++</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Android</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Vue</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">React</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">Angular</a>
+            <a href="#" class="swiper-slide btn btn-gray fw-bold border border-white rounded-4 p-4 px-lg-8 py-lg-6 w-auto hover-link-text-gradient-y" role="button">NodeJS</a>
+          </div>
         </div>
       </div>
     </div>
@@ -232,7 +236,7 @@
       <!-- Bootstrap 網格卡片 -->
       <div class="row g-4 mb-6 mb-md-12">
         <div class="col-md-6 col-xl-3">
-          <div class="card bg-gray pt-6 rounded-6 hover-border-primary-2 h-100">
+          <a href="#" class="card bg-gray text-white pt-6 rounded-6 hover-border-primary-2 h-100">
             <div class="d-flex flex-column align-items-center ">
               <img src="./assets/images/teacher01.jpg" class="card-img-top teacher-pic-size rounded-circle mb-2" alt="teacher-Belinda">
               <p class="fs-8 mb-2">Belinda</p>
@@ -250,10 +254,10 @@
                 </span>
               </p>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 col-xl-3">
-          <div class="card bg-gray pt-6 rounded-6 hover-border-primary-2 h-100">
+          <a href="#" class="card bg-gray text-white pt-6 rounded-6 hover-border-primary-2 h-100">
             <div class="d-flex flex-column align-items-center ">
               <img src="./assets/images/teacher02.jpg" class="card-img-top teacher-pic-size rounded-circle mb-2" alt="teacher-Guava">
               <p class="fs-8 mb-2">Guava</p>
@@ -271,10 +275,10 @@
                 </span>
               </p>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 col-xl-3">
-          <div class="card bg-gray pt-6 rounded-6 hover-border-primary-2 h-100">
+          <a href="#" class="card bg-gray text-white pt-6 rounded-6 hover-border-primary-2 h-100">
             <div class="d-flex flex-column align-items-center ">
               <img src="./assets/images/teacher03.jpg" class="card-img-top teacher-pic-size rounded-circle mb-2" alt="teacher-Joe">
               <p class="fs-8 mb-2">Joe</p>
@@ -292,10 +296,10 @@
                 </span>
               </p>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 col-xl-3">
-          <div class="card bg-gray pt-6 rounded-6 hover-border-primary-2 h-100">
+          <a href="#" class="card bg-gray text-white pt-6 rounded-6 hover-border-primary-2 h-100">
             <div class="d-flex flex-column align-items-center ">
               <img src="./assets/images/teacher04.jpg" class="card-img-top teacher-pic-size rounded-circle mb-2" alt="teacher-Lina">
               <p class="fs-8 mb-2">Lina</p>
@@ -313,7 +317,7 @@
                 </span>
               </p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="d-flex justify-content-center">
@@ -385,7 +389,7 @@
             <h4 class="card-title fs-7 mb-4">2022 前端開發者學習地圖</h4>
             <p class="card-text mb-4">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
             <div class="d-flex justify-content-end">
-              <a href="#" class="d-inline-block ff-azeret-mono fs-7 text-primary hover-link-opacity">MORE</a>
+              <a href="#" class="d-inline-block ff-azeret-mono fs-7 lh-spec-xs text-primary hover-link-opacity">MORE</a>
             </div>
           </div>
         </div>
@@ -399,7 +403,7 @@
             <h4 class="card-title fs-7 mb-4">軟體工程師有哪些類別</h4>
             <p class="card-text mb-4">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
             <div class="d-flex justify-content-end">
-              <a href="#" class="d-inline-block ff-azeret-mono fs-7 text-primary hover-link-opacity">MORE</a>
+              <a href="#" class="d-inline-block ff-azeret-mono fs-7 lh-spec-xs text-primary hover-link-opacity">MORE</a>
             </div>
           </div>
         </div>
@@ -413,7 +417,7 @@
             <h4 class="card-title fs-7 mb-4">免費 25 小時前端教學資源</h4>
             <p class="card-text mb-4">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
             <div class="d-flex justify-content-end">
-              <a href="#" class="d-inline-block ff-azeret-mono fs-7 text-primary hover-link-opacity">MORE</a>
+              <a href="#" class="d-inline-block ff-azeret-mono fs-7 lh-spec-xs text-primary hover-link-opacity">MORE</a>
             </div>
           </div>
         </div>
@@ -475,7 +479,6 @@
                   <img src="./assets/images/student04.jpg" alt="student04" class="card-img">
                 </div>
               </div>
-              ...
             </div>
             <!-- 左右按鈕和 pagination -->
             <div class="d-flex align-items-center justify-content-center swiper-fade-buttons">
@@ -516,7 +519,7 @@
 
     <footer class="footer bg-gray-900 text-gray-600 text-center py-4">
       <div class="container">
-        <p class="fs-10 fs-sm-8 mb-0">Coding Home © 2022 All Rights Reserved</p>
+        <p class="fs-10 fs-sm-8 lh-spec-s mb-0">Coding Home © 2022 All Rights Reserved</p>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
