@@ -47,25 +47,30 @@
 .service-text-underline {
   &::after{
     @include text-underline($primary);
-    left: 46%;
+    left: 50%; 
+    transform: translateX(-50%);
     @include media-breakpoint-up(lg) {
       left:0;
+      transform: translateX(0%);
     }
   }
 }
 .title-text-underline {
   &::after{
     @include text-underline($primary);
-    left: 46%;
+    left: 50%; 
+    transform: translateX(-50%);
   }
 }
 .sub-title-text-underline {
   &::after{
     @include text-underline($primary);
-    left: 46%;
+    left: 50%; 
+    transform: translateX(-50%);
     @include media-breakpoint-up(xl) {
       @include text-underline($white);
       left: 0;
+      transform: translateX(0%);
     }
   }
 }

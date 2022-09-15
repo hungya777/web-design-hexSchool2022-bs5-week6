@@ -1,6 +1,8 @@
 .logo-icon {
   @include size(24px);
+  background: url('../images/logo2.svg');
   @include media-breakpoint-up(sm) {
+    background: url('../images/logo.svg');
     width: 175px;
     height: 42px;
   }
