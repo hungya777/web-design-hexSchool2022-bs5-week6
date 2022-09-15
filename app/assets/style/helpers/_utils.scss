@@ -74,6 +74,15 @@
     }
   }
 }
+//文字-特殊行高
+.lh-spec {
+  &-xs {
+    line-height: 1.167;
+  }
+  &-s {
+    line-height: 1.1875;
+  }
+}
 
 //Border-radius
 .rounded-4 {

@@ -24,24 +24,31 @@
 @mixin font-size {
   &-1 {
     font-size: $h1-font-size !important;  //48px
+    line-height: 70px;
   }
   &-2 {
     font-size: $h2-font-size !important;  //32px
+    line-height: 37px;
   }
   &-3 {
     font-size: $h3-font-size !important;  //28px
+    line-height: 40px;
   }
   &-4 {
     font-size: $h4-font-size !important;  //24px
+    line-height: 35px;
   }
   &-5 {
     font-size: $font-size-base * 1.375 !important;  //22px
+    line-height: 32px;
   }
   &-6 {
     font-size: $font-size-base * 1.25 !important;  //20px
+    line-height: 29px;
   }
   &-7 {
     font-size: $font-size-base * 1.125 !important;  //18px
+    line-height: 26px;
   }
   &-8 {
     font-size: $font-size-base !important; //16px
@@ -51,6 +58,7 @@
   }
   &-10 {
     font-size: $font-size-base * 0.75 !important;  //12px
+    line-height: 14px;
   }
 }
 
